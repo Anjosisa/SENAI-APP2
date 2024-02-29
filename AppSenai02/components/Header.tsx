@@ -1,12 +1,12 @@
 import { View, Text, StyleSheet, Image } from "react-native"
 import { StatusBar } from 'expo-status-bar';
 
-function Header(){
+function Header({cor, texto}){
   return (
-    <View style={styles.container}>
+    <View style={{...styles.container,backgroundColor: cor}}>
         <StatusBar style="light"/>
-        <Image style={styles.logo} source={require('./assets/image.png')}></Image>
-        <Text style={styles.text}>Bem-Vindo(a)</Text>
+        <Image style={styles.logo} source={require('../assets/image.png')} />
+        <Text style={styles.text}>{texto}</Text>
     </View>
 
   )
@@ -14,23 +14,23 @@ function Header(){
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor:'#FF0000',
-    flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 42,
-    paddingHorizontal: 73,
+    height:250,
+  
   },
   logo:{
-    width: 200,
-    height: 51.27,
+    width: 181,
+    height: 39,
     marginBottom: 20,
+    marginTop: 40
   },
   text:{
-    fontFamily: 'Roboto',
+    fontFamily: 'Inter',
     fontSize: 20,
-    color: '#fff',
+    color: '#FFFFFF',
     fontWeight: '400',
-    lineHeight: 23.44
+    lineHeight: 24.2
 
   },
 
