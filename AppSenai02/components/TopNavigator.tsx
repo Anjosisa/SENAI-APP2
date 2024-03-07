@@ -18,9 +18,10 @@ const styles = StyleSheet.create({
         width: '100%',
         borderRadius: 5,
         justifyContent: 'space-between',
-        paddingVertical: 30,
+        paddingVertical: 20,
         paddingHorizontal: 15,
         alignItems: 'center',
+        marginTop:3
     },
 })
 export default TopNav

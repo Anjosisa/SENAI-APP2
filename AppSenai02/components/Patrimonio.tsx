@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     },
     patrimonio:{
         borderTopWidth: 1,
+        borderColor:"#F5F5F5",
         gap: 10,
         paddingVertical: 10,
         paddingHorizontal: 20,
