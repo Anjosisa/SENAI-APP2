@@ -2,7 +2,6 @@ import {View, TextInput, Text, StyleSheet } from "react-native";
 
 function Input({textoI , placeholder}){
     return(
-
         <View>
             <View style={styles.inputContainer}>
             <Text style={styles.fontE}>{textoI}</Text>
