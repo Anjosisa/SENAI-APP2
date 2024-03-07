@@ -1,11 +1,11 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-function BotãoC(){
+function Buttons({textoB}){
     return(
 
         <View>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.textButton}>Cadastre-se</Text>
+            <Text style={styles.textButton}>{textoB}</Text>
           </TouchableOpacity>
         </View>
 
@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
     button: {
         backgroundColor: '#000',
         width: 320,
-        height: 47,
+        height: 40,
         left:20,
         borderRadius: 5,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 80
+        marginTop: 30
     },
 
     textButton: {
@@ -34,8 +34,6 @@ const styles = StyleSheet.create({
 
     },
 
-    
-
 })
 
-export default BotãoC
+export default Buttons

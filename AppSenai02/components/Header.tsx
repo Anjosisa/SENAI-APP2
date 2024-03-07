@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, Image } from "react-native"
 import { StatusBar } from 'expo-status-bar';
 
+
 function Header({cor, texto}){
   return (
     <View style={{...styles.container,backgroundColor: cor}}>
@@ -17,6 +18,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height:250,
+    width:"100%",
+    gap:10,
+    borderBottomEndRadius:9,
+    borderBottomStartRadius:9
   
   },
   logo:{

@@ -11,10 +11,17 @@ function Subtitulos({textoS}){
 const styles = StyleSheet.create({
     text:{
         fontFamily: 'Inter',
-        fontSize: 20,
+        fontSize: 18,
         color: '#000000',
         fontWeight: '500',
-        lineHeight: 24.2
+        lineHeight: 19.36,
+        justifyContent:'center',
+        width:320,
+        height:50,
+        top: 40,
+        left:20,
+        textAlign:'center'
+        
     
     },
 })
