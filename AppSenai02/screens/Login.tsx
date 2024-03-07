@@ -12,8 +12,8 @@ function Login(){
         <View>
             <Header texto="Login" cor="#000000"/>
             <Subtitulos textoS="Faça Login para Acessar o Sistema!"/>
-            <Input textoI="Email:" placeholder="Insira seu email"/>
-            <Input textoI="Senha:" placeholder="Insira sua senha"/>
+            <Input label="Email:" placeholder="Insira seu email" secureTextEntry={false}/>
+            <Input label="Senha:" placeholder="Insira sua senha" secureTextEntry={true}/>
             <Buttons textoB= "Cadastre-se" />
             <Adicional textlink="Cadastre-se                                    Esqueceu a senha?"/>
         </View>

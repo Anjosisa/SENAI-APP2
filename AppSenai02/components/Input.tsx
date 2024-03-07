@@ -1,13 +1,49 @@
-import {View, TextInput, Text, StyleSheet } from "react-native";
+import {View, TextInput, Text, StyleSheet, TextInputProps } from "react-native"
+import { useState } from "react";
 
-function Input({textoI , placeholder}){
+interface InputProps extends TextInputProps{
+    label:string
+}
+
+function Input({label, ...props}: InputProps){
+    const[hover, setHover] = useState("#F39200")
+
+    const styles = StyleSheet.create({
+        inputContainer: {
+            marginTop:55,
+            width: 320,
+            height: 74,
+            left: 23,
+        },
+        
+        fontE:{
+            fontSize:16
+        },
+    
+        input: {
+            height: 40,
+            backgroundColor:'#F5F5F5',
+            borderRadius: 5,
+            padding: 10,
+            marginTop:10,
+            borderWidth:1,
+            borderColor: hover
+        },
+    
+    
+    })
+
     return(
         <View>
             <View style={styles.inputContainer}>
-            <Text style={styles.fontE}>{textoI}</Text>
-        <TextInput
-            style={styles.input}
-            placeholder={placeholder}
+            <Text style={styles.fontE}>{label}</Text>
+        <TextInput {...props}
+            style={styles.input} onFocus={()=>{
+                setHover("#F39200")
+            }} onBlur={()=>{
+                setHover("#F5F5F5")
+            }}
+            // placeholder={placeholder}
         />
             </View>
         </View>
@@ -15,28 +51,5 @@ function Input({textoI , placeholder}){
 
     )
 }
-
-const styles = StyleSheet.create({
-    inputContainer: {
-        marginTop:55,
-        width: 320,
-        height: 74,
-        left: 23,
-    },
-    
-    fontE:{
-        fontSize:16
-    },
-
-    input: {
-        height: 40,
-        backgroundColor:'#F5F5F5',
-        borderRadius: 5,
-        padding: 10,
-        marginTop:10,
-    },
-
-
-})
 
 export default Input

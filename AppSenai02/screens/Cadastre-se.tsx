@@ -8,12 +8,12 @@ function Cadastro(){
     return(
         <ScrollView>
             <Header texto="Cadastre - se" cor="#FF0000"/>
-            <Input textoI="Nome:" placeholder="Insira seu nome:"/>
-            <Input textoI="Sobrenome:" placeholder="Insira seu sobrenome:"/>
-            <Input textoI="E-mail:" placeholder="Insira seu email:"/>
-            <Input textoI="Telefone:" placeholder="Insira seu telefone:"/>
-            <Input textoI="Senha:" placeholder="Insira sua senha:"/>
-            <Input textoI="Confirmar senha:" placeholder="Insira sua senha:"/>
+            <Input label="Nome:" placeholder="Insira seu nome:"/>
+            <Input label="Sobrenome:" placeholder="Insira seu sobrenome:"/>
+            <Input label="E-mail:" placeholder="Insira seu email:"/>
+            <Input label="Telefone:" placeholder="Insira seu telefone:"/>
+            <Input label="Senha:" placeholder="Insira sua senha:"/>
+            <Input label="Confirmar senha:" placeholder="Insira sua senha:"/>
             <Buttons textoB="Cadastre-se"/>
         </ScrollView>
     )
