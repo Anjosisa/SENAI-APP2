@@ -1,17 +1,17 @@
-import { ViewProps, TextInput, Text, StyleSheet } from "react-native";
+import {View, TextInput, Text, StyleSheet } from "react-native";
 
 function Input({textoI , placeholder}){
     return(
 
-        <ViewProps>
-            <ViewProps style={styles.inputContainer}>
+        <View>
+            <View style={styles.inputContainer}>
             <Text style={styles.fontE}>{textoI}</Text>
         <TextInput
             style={styles.input}
             placeholder={placeholder}
         />
-            </ViewProps>
-        </ViewProps>
+            </View>
+        </View>
     
 
     )
@@ -19,7 +19,7 @@ function Input({textoI , placeholder}){
 
 const styles = StyleSheet.create({
     inputContainer: {
-        marginTop:25,
+        marginTop:55,
         width: 320,
         height: 74,
         left: 23,

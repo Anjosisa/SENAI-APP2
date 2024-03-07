@@ -6,9 +6,9 @@ import Login from "./screens/Login";
 function App(){
     return(
         <View>
-            {/* <RecupSenha/>
-            <Login/> */}
-            <Cadastro/>
+            {/* <RecupSenha/>*/}
+            <Login/>
+            {/* <Cadastro/> */}
         </View>
     )
 }

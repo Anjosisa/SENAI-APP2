@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Input from "../components/Input";
 import Buttons from "../components/Buttons";
 import Subtitulos from "../components/Subtitulos";
+import Adicional from "../components/ItemAdicional";
 
 
 
@@ -14,6 +15,7 @@ function Login(){
             <Input textoI="Email:" placeholder="Insira seu email"/>
             <Input textoI="Senha:" placeholder="Insira sua senha"/>
             <Buttons textoB= "Cadastre-se" />
+            <Adicional textlink="Cadastre-se                                    Esqueceu a senha?"/>
         </View>
     )
 }
