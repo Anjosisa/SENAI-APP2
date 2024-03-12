@@ -10,12 +10,12 @@ import Scanner from "./screens/Scanner";
 function App(){
     return(
         <View>
-            {/* <RecupSenha/>
+            <RecupSenha/>
             <Login/>
             <Cadastro/>
-            <Lista/> */}
-            {/* <AddItems/> */}
-            {/* <Descrição/> */}
+            <Lista/>
+            <AddItems/>
+            <Descrição/>
             <Scanner/>
         </View>
     )
