@@ -22,7 +22,7 @@ function Lista(){
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <ButtomNav icon="camera-reverse" icon2="menu" iconcolor="#fff" bgcolor="#FF0000"/>
+            <ButtomNav icon="camera-reverse" icon2="menu" iconcolor="#fff" bgcolor="#FF0000" bordercolor="FF0000"/>
             <TouchableOpacity style={styles.buttomplus}>
                 <AntDesign name="pluscircle" size={50} color="#FF0000" />
             </TouchableOpacity>

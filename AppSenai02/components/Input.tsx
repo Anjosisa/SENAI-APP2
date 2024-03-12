@@ -6,7 +6,7 @@ interface InputProps extends TextInputProps{
 }
 
 function Input({label, ...props}: InputProps){
-    const[hover, setHover] = useState("#F39200")
+    const[hover, setHover] = useState("#F5F5F5")
 
     const styles = StyleSheet.create({
         inputContainer: {
@@ -25,7 +25,8 @@ function Input({label, ...props}: InputProps){
             backgroundColor:'#F5F5F5',
             borderRadius: 5,
             padding: 10,
-            marginTop:10,
+            marginTop:15,
+            marginBottom:30,
             borderWidth:1,
             borderColor: hover
         },
@@ -43,7 +44,6 @@ function Input({label, ...props}: InputProps){
             }} onBlur={()=>{
                 setHover("#F5F5F5")
             }}
-            // placeholder={placeholder}
         />
             </View>
         </View>

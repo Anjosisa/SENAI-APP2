@@ -9,8 +9,8 @@ function RecupSenha(){
         <View>
             <Header texto="Recuperação de senha" cor = '#011E83'/>
             <Subtitulos textoS="Insira seu e-mail para recuperar                         a senha!"/>
-            <Input textoI="Email:" placeholder="Insira seu email:"/>
-            <Buttons textoB="Cadastre-se" cor='#101010'/>
+            <Input label="Email:" placeholder="Insira seu email:"/>
+            <Buttons textoB="Cadastre-se"/>
         </View>
     )
 }
