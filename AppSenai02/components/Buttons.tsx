@@ -4,9 +4,9 @@ function Buttons({textoB}){
     return(
 
         <View>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.textButton}>{textoB}</Text>
-          </TouchableOpacity>
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.textButton}>{textoB}</Text>
+            </TouchableOpacity>
         </View>
 
     )

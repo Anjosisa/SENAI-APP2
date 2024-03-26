@@ -4,7 +4,7 @@ function Adicional({textlink}){
     return(
         <View>
         <TouchableOpacity style={styles.links}>
-            <Text style={styles.textL}>{textlink}</Text>
+                <Text style={styles.textL}>{textlink}</Text>
         </TouchableOpacity>
       </View>
 
@@ -13,11 +13,8 @@ function Adicional({textlink}){
 
 const styles = StyleSheet.create({
     links:{
-        width: 318,
-        height: 17,
-        left: 20,
-        justifyContent: 'space-between',
-        marginTop:-14
+        marginTop:-40,
+        padding: 20
     },
 
     textL:{
