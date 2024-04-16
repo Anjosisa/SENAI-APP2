@@ -3,6 +3,7 @@ import { View, Text, TextInput, StyleSheet, TextInputProps } from 'react-native'
 
 interface InputItemProps extends TextInputProps {
   label: string;
+  descInicial: string
 }
 
 function InputItem({ label, ...props }: InputItemProps) {

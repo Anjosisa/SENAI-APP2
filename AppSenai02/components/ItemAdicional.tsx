@@ -3,9 +3,9 @@ import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 function Adicional({textlink}){
     return(
         <View>
-        <TouchableOpacity style={styles.links}>
+            <TouchableOpacity style={styles.links}>
                 <Text style={styles.textL}>{textlink}</Text>
-        </TouchableOpacity>
+            </TouchableOpacity>
       </View>
 
     )

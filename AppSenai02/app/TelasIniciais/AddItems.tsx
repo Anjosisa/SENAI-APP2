@@ -1,10 +1,10 @@
 import { ScrollView, StyleSheet,TouchableOpacity, View } from "react-native";
-import TopNav from "../components/TopNavigator";
-import Input from "../components/Input";
-import Patrimonio from "../components/Patrimonio";
-import ButtomNav from "../components/ButtomNavegator";
+import TopNav from "../../components/TopNavigator";
+import Input from "../../components/Input";
+import Patrimonio from "../../components/Patrimonio";
+import ButtomNav from "../../components/ButtomNavegator";
 import { AntDesign } from '@expo/vector-icons'
-import InputItem from "../components/InputItem";
+import InputItem from "../../components/InputItem";
 
 function AddItems(){
     return(

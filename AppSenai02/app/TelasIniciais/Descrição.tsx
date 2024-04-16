@@ -1,7 +1,7 @@
 import { View, StyleSheet, ScrollView, Text, TouchableOpacity } from "react-native"
-import TopNav from "../components/TopNavigator"
+import TopNav from "../../components/TopNavigator"
 import { MaterialIcons } from '@expo/vector-icons';
-import ButtomNav from "../components/ButtomNavegator";
+import ButtomNav from "../../components/ButtomNavegator";
 
 function Desc(){
     return( 

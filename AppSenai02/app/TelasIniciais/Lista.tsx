@@ -1,7 +1,7 @@
 import { ScrollView, StyleSheet,TouchableOpacity } from "react-native";
-import TopNav from "../components/TopNavigator";
-import Patrimonio from "../components/Patrimonio";
-import ButtomNav from "../components/ButtomNavegator";
+import TopNav from "../../components/TopNavigator";
+import Patrimonio from "../../components/Patrimonio";
+import ButtomNav from "../../components/ButtomNavegator";
 import { AntDesign } from '@expo/vector-icons'
 
 function Lista(){
