@@ -1,7 +1,5 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-function Buttons({textoB}){
-    return(
 
         <View>
             <TouchableOpacity style={styles.button}>
