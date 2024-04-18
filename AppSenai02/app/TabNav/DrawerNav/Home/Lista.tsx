@@ -1,13 +1,12 @@
 import { ScrollView, StyleSheet,TouchableOpacity } from "react-native";
-import TopNav from "../../components/TopNavigator";
-import Patrimonio from "../../components/Patrimonio";
-import ButtomNav from "../../components/ButtomNavegator";
+import Patrimonio from "../../../../components/Patrimonio";
+import { Link } from "expo-router";
 import { AntDesign } from '@expo/vector-icons'
+
 
 function Lista(){
     return(
         <ScrollView>
-            <TopNav icon="menu" icon2="search" text='Lista' bgcolor="#fff" fontcolor="#595959" iconcolor="#666"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
@@ -22,10 +21,13 @@ function Lista(){
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
             <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <ButtomNav icon="camera-reverse" icon2="menu" iconcolor="#fff" bgcolor="#FF0000" bordercolor="FF0000"/>
-            <TouchableOpacity style={styles.buttomplus}>
-                <AntDesign name="pluscircle" size={50} color="#FF0000" />
-            </TouchableOpacity>
+
+            <Link href="/TelasIniciais/AddItems" asChild>
+                <TouchableOpacity style={styles.buttomplus}>
+                    <AntDesign name="pluscircle" size={50} color="#FF0000" />
+                </TouchableOpacity>
+            </Link>
+
         </ScrollView>
     )
 }

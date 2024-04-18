@@ -2,6 +2,7 @@ import { ScrollView } from "react-native"
 import Header from "../../components/Header"
 import Input from "../../components/Input"
 import Buttons from "../../components/Buttons"
+import { Link } from "expo-router";
 
 
 function Cadastro(){
@@ -14,7 +15,9 @@ function Cadastro(){
             <Input label="Telefone:" placeholder="Insira seu telefone:"/>
             <Input label="Senha:" placeholder="Insira sua senha:"/>
             <Input label="Confirmar senha:" placeholder="Insira sua senha:"/>
-            <Buttons title="Cadastre-se" href=""/>
+            <Link href="TelasIniciais/Login" asChild>
+                <Buttons title="Cadastre-se"/>
+            </Link>
         </ScrollView>
     )
 }

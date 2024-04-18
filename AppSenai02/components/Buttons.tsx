@@ -1,40 +1,38 @@
-import { Link } from "expo-router"
-import { LinkProps } from "expo-router/build/link/Link"
-import { Text,TouchableOpacity,StyleSheet,} from "react-native"
+import { View, Text, TouchableOpacity, StyleSheet, TouchableOpacityProps } from "react-native";
 
+interface BotaoProps extends TouchableOpacityProps {
+    title: string;
+  }
 
-interface LinkBtnProps extends LinkProps{
-    title: string
-}
-
-export default function LinkBtn({title, ...props}: LinkBtnProps){
-
-    const styles = StyleSheet.create({
-        button: {
-            backgroundColor: '#000',
-            width: 320,
-            height: 40,
-            left:20,
-            borderRadius: 5,
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: 30,
-            marginBottom:30
-        },
-
-        title: {
-            color: "#FFFFFF",
-            textAlign: 'center',
-            fontSize: 16
-        }
-    })
-
+function Buttons({title, ...props}:BotaoProps){
     return(
-
-        <Link {...props} asChild>
-            <TouchableOpacity style={styles.button}>
+        <View>
+            <TouchableOpacity {...props} style={styles.button}>
                 <Text style={styles.title}>{title}</Text>
             </TouchableOpacity>
-        </Link>
+        </View>
     )
 }
+
+const styles = StyleSheet.create({
+    button:{
+        backgroundColor: '#000',
+        width: 320,
+        height: 40,
+        left:20,
+        borderRadius: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 30,
+        marginBottom:30
+    },
+    title:{
+        color: "#FFFFFF",
+        textAlign: 'center',
+        fontSize: 16
+    },
+})
+
+export default Buttons
+
+

@@ -1,9 +1,8 @@
-import {View, TouchableOpacity} from "react-native";
+import {View, TouchableOpacity, Text, StyleSheet} from "react-native";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import Buttons from "../../components/Buttons";
 import Subtitulos from "../../components/Subtitulos";
-import Adicional from "../../components/ItemAdicional";
 import { Link } from "expo-router";
 import { useColorScheme } from "react-native";
 
@@ -19,26 +18,42 @@ function Login(){
             <Subtitulos textoS="Faça Login para Acessar o Sistema!"/>
             <Input label="Email:" placeholder="Insira seu email" secureTextEntry={false}/>
             <Input label="Senha:" placeholder="Insira sua senha" secureTextEntry={true}/>
-            <Buttons title= "Cadastre-se" href="drawer" />
+            <Link href="TabNav" asChild>
+                <Buttons title="Entrar"/>
+            </Link>
             
-            <View style={{flexDirection: 'row', justifyContent: "space-between"}}>
-                
-                <Link href="/Cadastro" asChild>
-                    <TouchableOpacity>
-                        <Adicional textlink="Cadastre-se"/>
-                    </TouchableOpacity>
-                </Link>
+                <View style={styles.linksB}>
+                    <Link href="/TelasIniciais/Cadastro" asChild>
+                            <TouchableOpacity>
+                                <Text style={styles.text}>Cadastre-se</Text>
+                            </TouchableOpacity>
+                    </Link>
 
-                <Link href="/RecupSenha" asChild>
-                    <TouchableOpacity>
-                        <Adicional textlink="Esqueceu a senha?"/>
-                    </TouchableOpacity>
-                </Link>
+                    <Link href="/TelasIniciais/RecupSenha" asChild>
+                        <TouchableOpacity>
+                            <Text style={styles.text}>Esqueceu a senha?</Text>
+                        </TouchableOpacity>
+                    </Link>
+                </View>
             </View>
-        </View>
     )
 }
 
+
+const styles = StyleSheet.create({
+    linksB:{
+        flexDirection: 'row', 
+        justifyContent: "space-between", 
+        paddingHorizontal: 20
+    },
+    text:{
+        fontFamily:'Inter',
+        fontWeight:'400',
+        fontSize:14,
+        lineHeight:19.94,
+        color:'#011E83'
+    }
+})
 
 
 

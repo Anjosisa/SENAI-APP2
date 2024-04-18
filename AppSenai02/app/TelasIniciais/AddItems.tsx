@@ -11,11 +11,11 @@ function AddItems(){
         <ScrollView>
             <TopNav icon="arrow-back" icon2="add-circle-outline" text='Cadastro de Itens' bgcolor="#FF0000" fontcolor="#FFFFFF" iconcolor="#FFFFFF"/>
                 <View style={styles.container}>
-                    <InputItem label="Nº Inventário" placeholder=""/>
-                    <InputItem label="Descrição" placeholder=""/>
-                    <InputItem label="Local" placeholder=""/>
-                    <InputItem label="Responsável" placeholder=""/>
-                    <InputItem label="Data de registro" placeholder=""/>
+                    <InputItem label="Nº Inventário"/>
+                    <InputItem label="Descrição"/>
+                    <InputItem label="Local"/>
+                    <InputItem label="Responsável"/>
+                    <InputItem label="Data de registro"/>
                 </View>
                 <ButtomNav icon="camera-reverse" icon2="menu" iconcolor="#595959" bgcolor="#FFFFFF" bordercolor="#CBCBCB"/>
         </ScrollView>
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         paddingVertical: 60,
         paddingHorizontal: 20,
         height: 800
+    
     }
 })
 
