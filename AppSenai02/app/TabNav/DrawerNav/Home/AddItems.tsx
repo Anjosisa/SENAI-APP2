@@ -17,7 +17,6 @@ function AddItems(){
                     <InputItem label="Responsável" descInicial=""/>
                     <InputItem label="Data de registro" descInicial=""/>
                 </View>
-                <ButtomNav icon="camera-reverse" icon2="menu" iconcolor="#595959" bgcolor="#FFFFFF" bordercolor="#CBCBCB"/>
         </ScrollView>
     )
 }
