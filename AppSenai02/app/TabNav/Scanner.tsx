@@ -49,5 +49,3 @@ const styles = StyleSheet.create({
         opacity: 0.2
     }
 });
-
-export default Scanner;
