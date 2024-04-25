@@ -9,7 +9,6 @@ function Scanner(){
                 <View style={styles.container}>
                     <Image style={{width: 350, height: 350}} source={require('@assets/Scanner.png')}/>
                 </View>
-                <ButtomNav icon="camera-reverse" icon2="menu" iconcolor="#595959" bgcolor="#fff" bordercolor="CBCBCB"/>
             </ScrollView>
     )
 }

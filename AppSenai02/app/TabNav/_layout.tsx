@@ -11,6 +11,7 @@ export default function layout(){
         }}>
             <Tabs.Screen name="Scanner" options={{
                 headerTintColor: '#595959',
+                
             }}/>
             <Tabs.Screen name="DrawerNav" options={{
                 headerShown: false,
