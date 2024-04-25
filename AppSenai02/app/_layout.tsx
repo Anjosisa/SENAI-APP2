@@ -1,10 +1,6 @@
 import { Stack } from "expo-router";
-import { Ionicons } from '@expo/vector-icons';
-import { useColor } from "../Temas/Temas";
-
 
 export default function layout(){
-  const cores = useColor()
 
   return(
     <Stack>
@@ -52,16 +48,6 @@ export default function layout(){
       <Stack.Screen name='/TelasIniciais/Login' options={{
         headerShown: false
       }}/> 
-
-      <Stack.Screen name='TelasIniciais/Editar' options={{
-        headerRight: () => (
-          <Ionicons name="checkmark-circle" size={24} color="white" />
-        ),
-        headerTitle: "Editar",
-        headerTintColor: "#fff",
-        headerStyle: { backgroundColor: cores.bgSecundary },
-        headerTitleAlign: 'center'
-      }}/>
 
     </Stack>
     
