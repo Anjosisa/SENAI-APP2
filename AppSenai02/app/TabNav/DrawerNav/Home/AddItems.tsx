@@ -9,7 +9,6 @@ import InputItem from "../../../../components/InputItem";
 function AddItems(){
     return(
         <ScrollView>
-            <TopNav icon="arrow-back" icon2="add-circle-outline" text='Cadastro de Itens' bgcolor="#FF0000" fontcolor="#FFFFFF" iconcolor="#FFFFFF"/>
                 <View style={styles.container}>
                     <InputItem label="Nº Inventário" descInicial=""/>
                     <InputItem label="Descrição" descInicial=""/>

@@ -7,22 +7,22 @@ import { AntDesign } from '@expo/vector-icons'
 function Lista(){
     return(
         <ScrollView>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
-            <Patrimonio id={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
+            <Patrimonio id2={956389} categoria="CADEIRA SENAI"/>
 
-            <Link href="/TelasIniciais/AddItems" asChild>
+            <Link href="TabNav/DrawerNav/Home/AddItems" asChild>
                 <TouchableOpacity style={styles.buttomplus}>
                     <AntDesign name="pluscircle" size={50} color="#FF0000" />
                 </TouchableOpacity>

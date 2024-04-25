@@ -28,7 +28,7 @@ export default function Layout() {
                 }}
             />
 
-            <Drawer.Screen name='Sobre o App'
+            <Drawer.Screen name='Sobre O App'
                 options={{
                     headerShown: false,
                     drawerIcon: () => (

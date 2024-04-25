@@ -1,25 +1,53 @@
-import { View, StyleSheet, ScrollView, Image } from "react-native"
-import TopNavigator from "@components/TopNavigator"
-import ButtomNav from"@components/ButtomNavegator"
+import React, { useState } from "react";
+import { View, StyleSheet, TouchableOpacity} from "react-native";
+import {MaterialIcons} from '@expo/vector-icons';
+import { Camera, CameraType } from "expo-camera";
+import { useColor } from "../../Temas/Temas";
 
-function Scanner(){
-    return( 
-        <ScrollView>
-            <TopNavigator icon="arrow-back" icon2="refresh-outline" text="Scanner" bgcolor="#ff0000" fontcolor="#fff" iconcolor="#fff"/>
-                <View style={styles.container}>
-                    <Image style={{width: 350, height: 350}} source={require('@assets/Scanner.png')}/>
+
+const Scanner = () => {
+    const [type, setType] = useState(CameraType.back);
+    const [permission, requestPermission] = Camera.useCameraPermissions();
+    const [iconOpacity, setIconOpacity] = useState(1); 
+    const cores = useColor()
+
+    if (!permission)
+        return null;
+
+    if (!permission.granted)
+        return null;
+
+
+    return(
+        <View style={styles.container}>
+            <Camera style={styles.camera} type={type}>
+                <View style={styles.qrContainer}>
+                    <TouchableOpacity>
+                        <MaterialIcons name="qr-code-scanner" size={300} color={cores.scannerColor} style={{ opacity: iconOpacity }} />
+                    </TouchableOpacity>
                 </View>
-            </ScrollView>
-    )
+            </Camera>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-    container:{
-        paddingVertical: 60,
-        paddingHorizontal: 20,
-        height: 800,
+    container: {
+        flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignContent: 'center',
+    },
+    camera: {
+        flex: 1,
+        justifyContent: 'center',
+        alignContent: 'center',
+        alignItems: 'center',
+        paddingTop: 240,
+    },
+    qrContainer: {
+        alignItems: 'center',
+        opacity: 0.2
     }
-})
-export default Scanner
+});
+
+export default Scanner;

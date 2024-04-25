@@ -5,7 +5,6 @@ import InputItem from "../../../../components/InputItem"
 function Editar(){
     return( 
         <ScrollView>
-            <TopNav icon="arrow-back" icon2="checkmark-circle" text="Editar" bgcolor="#FF0000" iconcolor="#fff" fontcolor="#fff"/>
                 <View style={styles.container}>
                     <InputItem label="N° do Inventário " descInicial="957689"/>
                     <InputItem label="Descrição " descInicial="CADEIRA GIRATÓRIA"/>
