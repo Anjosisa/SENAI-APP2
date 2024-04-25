@@ -2,6 +2,7 @@ import { View, Text, StyleSheet  } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 
+
 function TopNav({icon, icon2, text, bgcolor, fontcolor, iconcolor}){
     return(
         <View style={{...styles.nav, backgroundColor: bgcolor}}>
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         alignItems: 'center',
         marginTop:5
+        
     },
 })
 export default TopNav

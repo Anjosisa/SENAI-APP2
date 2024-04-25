@@ -3,12 +3,17 @@ import Header from "../../components/Header"
 import Input from "../../components/Input"
 import Buttons from "../../components/Buttons"
 import { Link } from "expo-router";
+import { useColor } from "@temas/Temas";
+import { StyleSheet } from "react-native";
 
 
 function Cadastro(){
+
+    const cores = useColor()
+
     return(
-        <ScrollView>
-            <Header texto="Cadastre - se" cor="#FF0000"/>
+        <ScrollView style={styles.container}>
+            <Header texto="Cadastre - se" cor={cores.cadastroHeader}/>
             <Input label="Nome:" placeholder="Insira seu nome:"/>
             <Input label="Sobrenome:" placeholder="Insira seu sobrenome:"/>
             <Input label="E-mail:" placeholder="Insira seu email:"/>
@@ -21,4 +26,14 @@ function Cadastro(){
         </ScrollView>
     )
 }
+
+const cores = useColor()
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor: cores.bgPrimary,
+        flex: 1
+    }
+
+    })
+
  export default Cadastro

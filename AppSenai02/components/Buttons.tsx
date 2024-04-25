@@ -1,3 +1,4 @@
+import { useColor } from "@temas/Temas";
 import { View, Text, TouchableOpacity, StyleSheet, TouchableOpacityProps } from "react-native";
 
 interface BotaoProps extends TouchableOpacityProps {
@@ -14,9 +15,10 @@ function Buttons({title, ...props}:BotaoProps){
     )
 }
 
+const cores = useColor()
 const styles = StyleSheet.create({
     button:{
-        backgroundColor: '#000',
+        backgroundColor: cores.bgButtom,
         width: 320,
         height: 40,
         left:20,
@@ -25,6 +27,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 30,
         marginBottom:30
+
     },
     title:{
         color: "#FFFFFF",

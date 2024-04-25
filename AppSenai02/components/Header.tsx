@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Image } from "react-native"
 import { StatusBar } from 'expo-status-bar';
+import { useColor } from "../Temas/Temas";
 
 
 function Header({cor, texto}){
@@ -13,6 +14,7 @@ function Header({cor, texto}){
   )
 }
 
+const cores = useColor()
 const styles = StyleSheet.create({
   container:{
     justifyContent: 'center',
@@ -21,7 +23,7 @@ const styles = StyleSheet.create({
     width:"100%",
     gap:10,
     borderBottomEndRadius:9,
-    borderBottomStartRadius:9
+    borderBottomStartRadius:9,
   
   },
   logo:{

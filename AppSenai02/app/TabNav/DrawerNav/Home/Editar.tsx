@@ -1,6 +1,7 @@
 import { View, StyleSheet, ScrollView } from "react-native"
 import TopNav from "../../../../components/TopNavigator"
 import InputItem from "../../../../components/InputItem"
+import { useColor } from "../../../../Temas/Temas"
 
 function Editar(){
     return( 
@@ -16,11 +17,13 @@ function Editar(){
     )
 }
 
+const cores = useColor()
 const styles = StyleSheet.create({
     container:{
         paddingVertical: 60,
         paddingHorizontal: 20,
         height: '100%',
+        backgroundColor: cores.bgPrimary
     },
 })
 export default Editar

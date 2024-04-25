@@ -5,6 +5,7 @@ import Buttons from "../../components/Buttons";
 import Subtitulos from "../../components/Subtitulos";
 import { Link } from "expo-router";
 import { useColorScheme } from "react-native";
+import { useColor } from "../../Temas/Temas";
 
 
 
@@ -12,12 +13,13 @@ const colorSheme = useColorScheme()
 
 
 function Login(){
+    const cores = useColor()
     return(
-        <View>
-            <Header texto="Login" cor="#000000"/>
+        <View style={styles.container}>
+            <Header texto="Login" cor={cores.loginHeader}/>
             <Subtitulos textoS="Faça Login para Acessar o Sistema!"/>
-            <Input label="Email:" placeholder="Insira seu email" secureTextEntry={false}/>
-            <Input label="Senha:" placeholder="Insira sua senha" secureTextEntry={true}/>
+            <Input label="Email:" placeholder="Insira seu email" secureTextEntry={false} />
+            <Input label="Senha:" placeholder="Insira sua senha" secureTextEntry={true} />
             <Link href="TabNav" asChild>
                 <Buttons title="Entrar"/>
             </Link>
@@ -39,8 +41,14 @@ function Login(){
     )
 }
 
-
+const cores = useColor()
 const styles = StyleSheet.create({
+    container:{
+        backgroundColor: cores.bgPrimary,
+        flex: 1
+
+    },
+
     linksB:{
         flexDirection: 'row', 
         justifyContent: "space-between", 
@@ -51,7 +59,7 @@ const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:14,
         lineHeight:19.94,
-        color:'#011E83'
+        color: cores.colorLinks
     }
 })
 

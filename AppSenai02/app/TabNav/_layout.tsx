@@ -16,7 +16,7 @@ export default function layout(){
         }}>
         <Tabs.Screen name="Scanner"
             options={{
-                headerRight: () => <Ionicons name="refresh" size={24} color={'white'} />,
+                headerRight: () => <Ionicons name="refresh" size={24} color={'white'} padding={10}/>,
                 headerTitle: "Scanner",
                 headerTintColor: "#fff",
                 headerStyle: { backgroundColor: cores.bgSecundary },

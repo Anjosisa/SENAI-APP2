@@ -44,6 +44,15 @@ export default function Layout() {
                     headerTintColor: "#fff",
                     headerStyle: { backgroundColor: cores.bgSecundary },
                     headerTitleAlign: 'center'
+                }}/>
+
+            <Stack.Screen name='Descricao' 
+                options={{
+                    headerRight: () => <Ionicons name="checkmark-circle" size={24} color="white" />,
+                    headerTitle: "Descrição",
+                    headerTintColor: "#fff",
+                    headerStyle: { backgroundColor: cores.bgSecundary },
+                    headerTitleAlign: 'center'
                 }}
             />
         </Stack>
